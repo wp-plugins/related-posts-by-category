@@ -17,7 +17,7 @@ The WordPress Plugin for Similar Posts. It's small. It's fast. Really.
 * Foolproven implementing of this plugin.
 
 = Mode of operation =
-Just put `<?php related_posts_by_category(your_parameters) ?>` in your single.php template for display a list of similar posts.
+Just put <?php related_posts_by_category(your_parameters) ?> in your single.php template for display a list of similar posts.
 
 Please visit the [Related Posts by Category plugin home page](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category") for the detailed documentation, the [german translation](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "German translation of the Related Posts by Category plugin") and the latest information on this plugin.
 
