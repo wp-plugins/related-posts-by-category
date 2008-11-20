@@ -27,7 +27,7 @@ Please visit the [Related Posts by Category homepage](http://playground.ebiene.d
 1. Upload the file *related_posts.php* into *../wp-content/plugins/*
 1. Go to tab *Plugins*
 1. Activate *Related Posts by Category*
-1. Expand *single.php* about the php call <?php related_posts_by_category(your_parameters) ?>
+1. Expand *single.php* about the php call `<?php related_posts_by_category(your_parameters) ?>`
 1. Ready
 
 Please visit the [Related Posts by Category homepage](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category") for further details and practical examples.
