@@ -1,6 +1,6 @@
 === Related Posts by Category ===
 Contributors: stalkerX
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=stalkerX%40gmx%2ede&lc=US&item_name=Sergej%20Müller&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHostedGuest
+Donate link: http://playground.ebiene.de/donate/
 Tags: similar posts, related posts, similar, related, posts, category
 Requires at least: 2.3
 Tested up to: 2.7
