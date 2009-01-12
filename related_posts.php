@@ -5,7 +5,7 @@ Plugin URI: http://playground.ebiene.de/400/related-posts-by-category-the-wordpr
 Description: The WordPress Plugin for Similar Posts. It's small. It's fast. Really.
 Author: Sergej M&uuml;ller
 Version: 0.3
-Author URI: http://www.ebiene.de
+Author URI: http://www.wpseo.org
 */
 
 
