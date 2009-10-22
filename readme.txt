@@ -3,7 +3,7 @@ Contributors: stalkerX
 Donate link: http://playground.ebiene.de/donate/
 Tags: similar posts, related posts, similar, related, posts, category
 Requires at least: 2.3
-Tested up to: 2.8.4
+Tested up to: 2.8.5
 Stable tag: trunk
 
 The WordPress Plugin for Similar Posts. It's small. It's fast. Really.
