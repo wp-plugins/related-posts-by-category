@@ -6,7 +6,7 @@ Requires at least: 2.3
 Tested up to: 2.8.5
 Stable tag: trunk
 
-The WordPress Plugin for Similar Posts. It's small. It's fast. Really.
+The WordPress Plugin for Similar Posts. It's small. It's fast. Really!
 
 == Description ==
 *Related Posts by Category* lists similar posts within any post. As a search string the plugin does not use the title of the article nor weighs the content. In fact the category, which was assigned to the post, serves as the source of accordance.
@@ -20,6 +20,12 @@ The WordPress Plugin for Similar Posts. It's small. It's fast. Really.
 Just put `<?php related_posts_by_category(your_parameters) ?>` in your *single.php* template for display a list of similar posts.
 
 Please visit the [Related Posts by Category homepage](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category") for the detailed documentation, the [german translation](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "German translation of the Related Posts by Category plugin") and the latest information on this plugin.
+
+
+== Changelog ==
+= 0.4 =
+* Increase the security of the database query
+
 
 == Installation ==
 1. Download plugin
