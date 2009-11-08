@@ -12,12 +12,35 @@ The WordPress Plugin for Similar Posts. It's small. It's fast. Really!
 *Related Posts by Category* lists similar posts within any post. As a search string the plugin does not use the title of the article nor weighs the content. In fact the category, which was assigned to the post, serves as the source of accordance.
 
 = Features =
-* Quick query in only one sql statement.
-* Quantity of results and further options are adjustable.
-* Foolproven implementing of this plugin.
+* Quick query in only one sql statement
+* Quantity of results and further options are adjustable
+* Foolproven implementing of this plugin
 
 = Mode of operation =
-Just put `<?php related_posts_by_category(your_parameters) ?>` in your *single.php* template for display a list of similar posts.
+Just put `<?php related_posts_by_category(params) ?>` in your *single.php* template for display a list of similar posts.
+
+= Example =
+`
+<ul>
+  <?php
+  related_posts_by_category(
+    array(
+      'orderby' => 'RAND',
+      'order' => 'DESC',
+      'limit' => 5,
+      'echo' => true,
+      'before' => '<li>',
+      'inside' => '&raquo; ',
+      'outside' => '',
+      'after' => '</li>',
+      'rel' => 'nofollow',
+      'type' => 'post',
+      'message' => 'no matches'
+    )
+  );
+  ?>
+</ul>
+`
 
 Please visit the [Related Posts by Category homepage](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category") for the detailed documentation, the [german translation](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "German translation of the Related Posts by Category plugin") and the latest information on this plugin.
 
@@ -26,6 +49,15 @@ Please visit the [Related Posts by Category homepage](http://playground.ebiene.d
 = 0.4 =
 * Increase the security of the database query
 
+= 0.3 =
+* By chance generated display of results with *orderby* => *RAND*
+
+= 0.2 =
+* *post* or *page* as a parameter for type value
+
+= 0.1 =
+* *Related Posts by Category* goes online
+
 
 == Installation ==
 1. Download plugin
@@ -33,7 +65,7 @@ Please visit the [Related Posts by Category homepage](http://playground.ebiene.d
 1. Upload the file *related_posts.php* into *../wp-content/plugins/*
 1. Go to tab *Plugins*
 1. Activate *Related Posts by Category*
-1. Expand *single.php* about the php call `<?php related_posts_by_category(your_parameters) ?>`
+1. Expand *single.php* about the php call `<?php related_posts_by_category(params) ?>`
 1. Ready
 
 Please visit the [Related Posts by Category homepage](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category") for further details and practical examples.
