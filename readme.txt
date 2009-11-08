@@ -69,7 +69,6 @@ Just put `<?php related_posts_by_category(params) ?>` in your *single.php* templ
 1. Upload the file *related_posts.php* into *../wp-content/plugins/*
 1. Go to tab *Plugins*
 1. Activate *Related Posts by Category*
-1. Expand *single.php* about the php call `<?php related_posts_by_category(params) ?>`
 1. Ready
 
 
