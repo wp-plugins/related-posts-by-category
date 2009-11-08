@@ -72,10 +72,9 @@ Just put `<?php related_posts_by_category(params) ?>` in your *single.php* templ
 1. Expand *single.php* about the php call `<?php related_posts_by_category(params) ?>`
 1. Ready
 
-Please visit the [Related Posts by Category homepage](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category") for further details and practical examples.
-
-== Screenshots ==
-Please visit the [Related Posts by Category homepage](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category") for screenshots & user examples.
 
 == Frequently Asked Questions ==
-Please visit the [Related Posts by Category homepage](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category") for up-to-date information and more help.
+= Documentation =
+* [Detailed documentation in English](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category")
+* [Detailed documentation in German](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
+* [Follow us on Twitter for updates](http://twitter.com/wpSEO "wpSEO on Twitter")
