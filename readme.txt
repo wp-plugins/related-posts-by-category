@@ -42,6 +42,7 @@ Just put `<?php related_posts_by_category(params) ?>` in your *single.php* templ
 </ul>
 `
 
+
 = Documentation =
 * [Detailed documentation in English](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category")
 * [Detailed documentation in German](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
