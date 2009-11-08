@@ -2,7 +2,7 @@
 /*
 Plugin Name: Related Posts by Category
 Plugin URI: http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/
-Description: The WordPress Plugin for Similar Posts. It's small. It's fast. Really.
+Description: The WordPress Plugin for similar posts grouped by category. It's small. It's fast. Really.
 Author: Sergej M&uuml;ller
 Version: 0.4
 Author URI: http://www.wpseo.org

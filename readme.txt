@@ -13,6 +13,8 @@ The WordPress Plugin for Similar Posts. It's small. It's fast. Really!
 *Related Posts by Category* lists similar posts within any post. As a search string the plugin does not use the title of the article nor weighs the content. In fact the category, which was assigned to the post, serves as the source of accordance.
 
 = Features =
+* Very fast execution
+* No user interface required
 * Quick query in only one sql statement
 * Quantity of results and further options are adjustable
 * Foolproven implementing of this plugin
