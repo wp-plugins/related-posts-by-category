@@ -48,8 +48,8 @@ Please adjust the parameters accordingly.
 
 
 = Documentation =
-* [Detailed documentation in English](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category")
-* [Detailed documentation in German](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
+* [*Related Posts by Category* documentation in English](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category")
+* [*Related Posts by Category* documentation in German](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
 * [Follow us on Twitter for updates](http://twitter.com/wpSEO "wpSEO on Twitter")
 
 
@@ -78,6 +78,6 @@ Please adjust the parameters accordingly.
 
 == Frequently Asked Questions ==
 = Documentation =
-* [Detailed documentation in English](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category")
-* [Detailed documentation in German](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
+* [*Related Posts by Category* documentation in English](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category")
+* [*Related Posts by Category* documentation in German](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
 * [Follow us on Twitter for updates](http://twitter.com/wpSEO "wpSEO on Twitter")
