@@ -2,10 +2,10 @@
 Contributors: stalkerX
 Tags: similar posts, related posts, similar, related, posts, category
 Requires at least: 2.3
-Tested up to: 2.8.6
+Tested up to: 2.9
 Stable tag: trunk
 
-The WordPress Plugin for Similar Posts. It's small. It's fast. Really!
+WordPress plugin for related posts ordered by current category. It's small. It's fast. Really!
 
 
 == Description ==
@@ -15,35 +15,37 @@ The WordPress Plugin for Similar Posts. It's small. It's fast. Really!
 = Features =
 * Very fast execution
 * No user interface required
+* Post thumbnail integration
 * Quick query in only one sql statement
 * Quantity of results and further options are adjustable
 * Foolproven implementing of this plugin
 
 
 = Mode of operation =
-Just put `<?php related_posts_by_category(params) ?>` in your *single.php* template for display a list of similar posts.
+Just put `<?php new RPBC(array(params)) ?>` in your *single.php* template for display a list of similar posts.
 
 
 = Example =
 `
 <ul>
-  <?php
-  related_posts_by_category(
-    array(
-      'orderby' => 'RAND',
-      'order' => 'DESC',
-      'limit' => 5,
-      'echo' => true,
-      'before' => '<li>',
-      'inside' => '&raquo; ',
-      'outside' => '',
-      'after' => '</li>',
-      'rel' => 'nofollow',
-      'type' => 'post',
-      'message' => 'no matches'
-    )
-  );
-  ?>
+  <?php if (class_exists('RPBC')) {
+		new RPBC(
+	  	array(
+	      'orderby' => 'RAND',
+	      'order' => 'DESC',
+	      'limit' => 5,
+	      'echo' => true,
+	      'before' => '<li>',
+	      'inside' => '&raquo; ',
+	      'outside' => '',
+	      'after' => '</li>',
+	      'rel' => 'nofollow',
+	      'type' => 'post',
+	      'image' => 'thumbnail',
+	      'message' => 'no matches'
+	    )
+	  );
+  } ?>
 </ul>
 `
 Please adjust the parameters accordingly.
@@ -56,6 +58,9 @@ Please adjust the parameters accordingly.
 
 
 == Changelog ==
+= 0.5 =
+* Display the post thumbnail (since WordPress 2.9) or first available image in the post
+
 = 0.4 =
 * Increase the security of the database query
 
@@ -83,3 +88,52 @@ Please adjust the parameters accordingly.
 * [*Related Posts by Category* documentation in English](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category")
 * [*Related Posts by Category* documentation in German](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
 * [Follow us on Twitter for updates](http://twitter.com/wpSEO "wpSEO on Twitter")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+= Features =
+* Post Thumbnail integration.
+* Quantity of results and further options are adjustable.
+* Foolproven implementing of this plugin.
+
+= Mode of operation =
+Just put `<?php related_posts_by_category(your_parameters) ?>` in your *single.php* template for display a list of similar posts.
+
+Please visit the [Related Posts by Category homepage](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category") for the detailed documentation, the [german translation](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "German translation of the Related Posts by Category plugin") and the latest information on this plugin.
+
+
+== Changelog ==
+= 0.5 =
+* Display the post thumbnail (since WordPress 2.9) or the first available image in the post
+
+= 0.4 =
+* Increase the security of the database query
+
+
+== Installation ==
+1. Download plugin
+1. Unzip the archive
+1. Upload the file *related_posts.php* into *../wp-content/plugins/*
+1. Go to tab *Plugins*
+1. Activate *Related Posts by Category*
+1. Expand *single.php* about the php call `<?php related_posts_by_category(your_parameters) ?>`
+1. Ready
+
+Please visit the [Related Posts by Category homepage](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category") for further details and practical examples.
+
+== Screenshots ==
+Please visit the [Related Posts by Category homepage](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category") for screenshots & user examples.
+
+== Frequently Asked Questions ==
+Please visit the [Related Posts by Category homepage](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category") for up-to-date information and more help.
