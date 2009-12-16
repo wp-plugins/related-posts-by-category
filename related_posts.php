@@ -69,9 +69,10 @@ $this->get_image($post->ID, $params['image'])
 $image = '';
 }
 $output .= sprintf(
-'%s<a href="%s"%s>%s%s%s%s</a>%s',
+'%s<a href="%s" title="%s"%s>%s%s%s%s</a>%s',
 $before,
 get_permalink($post->ID),
+$title,
 $rel,
 $image,
 $inside,
@@ -93,7 +94,7 @@ function get_image($id, $type = 'thumbnail') {
 if (!intval($id)) {
 return;
 }
-if (function_exists('get_the_post_image') && $image = get_the_post_image($id, $type)) {
+if (function_exists('get_the_post_thumbnail') && $image = get_the_post_thumbnail($id, $type)) {
 return $image;
 }
 if (function_exists('wp_get_attachment_image')) {
