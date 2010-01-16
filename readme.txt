@@ -2,7 +2,7 @@
 Contributors: stalkerX
 Tags: similar posts, related posts, similar, related, posts, category
 Requires at least: 2.3
-Tested up to: 2.9
+Tested up to: 2.9.1
 Stable tag: trunk
 
 WordPress plugin for related posts ordered by current category. It's small. It's fast. Really!

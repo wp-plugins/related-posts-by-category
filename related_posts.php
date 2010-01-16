@@ -5,9 +5,8 @@ Plugin URI: http://playground.ebiene.de/400/related-posts-by-category-the-wordpr
 Description: WordPress plugin for related posts ordered by current category. It's small. It's fast. Really!
 Author: Sergej M&uuml;ller
 Version: 0.5
-Author URI: http://www.wpseo.org
+Author URI: http://www.wpSEO.org
 */
-
 
 
 if (!function_exists('is_admin')) {
