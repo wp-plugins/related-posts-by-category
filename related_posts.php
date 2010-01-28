@@ -86,7 +86,7 @@ $output = $params['message'];
 if (isset($params['echo']) && !empty($params['echo'])) {
 echo $output;
 } else {
-return $output;
+$this->output = $output;
 }
 }
 function get_image($id, $type = 'thumbnail') {
@@ -118,7 +118,7 @@ return wp_get_attachment_image($key, $type);
 }
 if (!function_exists('related_posts_by_category')) {
 function related_posts_by_category($params, $id = 0) {
-new RPBC($params, $id);
+$GLOBALS['RPBC'] = new RPBC($params, $id);
 }
 }
 if (function_exists('current_theme_supports') && !current_theme_supports('post-thumbnails')) {
