@@ -4,7 +4,7 @@ Plugin Name: Related Posts by Category
 Plugin URI: http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/
 Description: WordPress plugin for related posts ordered by current category. It's small. It's fast. Really!
 Author: Sergej M&uuml;ller
-Version: 0.5
+Version: 0.6
 Author URI: http://www.wpSEO.org
 */
 
@@ -124,4 +124,9 @@ $GLOBALS['RPBC'] = new RPBC($params, $id);
 if (function_exists('current_theme_supports') && !current_theme_supports('post-thumbnails')) {
 add_theme_support('post-thumbnails');
 }
-?>
+add_action(
+'related_posts_by_category',
+'related_posts_by_category',
+10,
+2
+);

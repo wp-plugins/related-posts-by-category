@@ -13,12 +13,12 @@ WordPress plugin for related posts ordered by current category. It's small. It's
 
 
 = Features =
+* Hook support
 * Very fast execution
 * No user interface required
 * Post thumbnail integration (WP 2.9 or older)
 * Quick query in only one sql statement
 * Quantity of results and further options are adjustable
-* Foolproven implementing of this plugin
 
 
 = Mode of operation =
@@ -28,9 +28,9 @@ Just put `<?php new RPBC(array(params)) ?>` in your *single.php* template for di
 = Example =
 `
 <ul>
-  <?php if (class_exists('RPBC')) {
-		new RPBC(
-	  	array(
+  <?php do_action(
+			'related_posts_by_category',
+			array(
 	      'orderby' => 'RAND',
 	      'order' => 'DESC',
 	      'limit' => 5,
@@ -42,7 +42,7 @@ Just put `<?php new RPBC(array(params)) ?>` in your *single.php* template for di
 	      'rel' => 'nofollow',
 	      'type' => 'post',
 	      'image' => 'thumbnail',
-	      'message' => 'no matches'
+	      'message' => 'No matches'
 	    )
 	  );
   } ?>
@@ -58,6 +58,9 @@ Please adjust the parameters accordingly.
 
 
 == Changelog ==
+= 0.6 =
+* Add hook support for the attaching action
+
 = 0.5 =
 * Post thumbnails (since WP 2.9), first available post image alternatively
 * WordPress 2.9 ready
