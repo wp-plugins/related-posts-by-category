@@ -22,38 +22,37 @@ WordPress plugin for related posts ordered by current category. It's small. It's
 
 
 = Mode of operation =
-Just put `<?php new RPBC(array(params)) ?>` in your *single.php* template for display a list of similar posts.
+Just put `<?php do_action('related_posts_by_category', args) ?>` in your *single.php* template for display a list of similar posts.
 
 
 = Example =
 `
 <ul>
   <?php do_action(
-			'related_posts_by_category',
-			array(
-	      'orderby' => 'RAND',
-	      'order' => 'DESC',
-	      'limit' => 5,
-	      'echo' => true,
-	      'before' => '<li>',
-	      'inside' => '&raquo; ',
-	      'outside' => '',
-	      'after' => '</li>',
-	      'rel' => 'nofollow',
-	      'type' => 'post',
-	      'image' => 'thumbnail',
-	      'message' => 'No matches'
-	    )
-	  );
-  } ?>
+    'related_posts_by_category',
+    array(
+	    'orderby' => 'RAND',
+	    'order' => 'DESC',
+	    'limit' => 5,
+	    'echo' => true,
+	    'before' => '<li>',
+	    'inside' => '&raquo; ',
+	    'outside' => '',
+	    'after' => '</li>',
+	    'rel' => 'nofollow',
+	    'type' => 'post',
+	    'image' => 'thumbnail',
+	    'message' => 'No matches'
+	  )
+	) ?>
 </ul>
 `
 Please adjust the parameters accordingly.
 
 
 = Documentation =
-* [*Related Posts by Category* documentation in English](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category")
-* [*Related Posts by Category* documentation in German](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
+* [Documentation in English](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category")
+* [Documentation in German](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
 * [Follow us on Twitter for updates](http://twitter.com/wpSEO "wpSEO on Twitter")
 
 
