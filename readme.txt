@@ -2,7 +2,7 @@
 Contributors: stalkerX
 Tags: similar posts, related posts, similar, related, posts, category
 Requires at least: 2.3
-Tested up to: 3.0.1
+Tested up to: 3.1
 Stable tag: trunk
 
 WordPress plugin for related posts ordered by current category. It's small. It's fast. Really!
@@ -51,13 +51,17 @@ Please adjust the parameters accordingly.
 
 
 = Documentation =
-* [Documentation in english](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category")
-* [Documentation in german](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
+* [Plugin documentation in german](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category")
+* [Plugin documentation in english](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
 * [Follow us on Twitter for updates](http://twitter.com/wpSEO "wpSEO on Twitter")
+* [Other author plugins](http://wordpress.org/extend/plugins/profile/stalkerx "Other author plugins")
 * [Author page](http://ebiene.de "Author page")
 
 
 == Changelog ==
+= 0.7 =
+* Add support for the default thumb image
+
 = 0.6 =
 * Add hook support for the attaching action
 

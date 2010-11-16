@@ -1,11 +1,13 @@
 <?php
 /*
 Plugin Name: Related Posts by Category
-Plugin URI: http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/
+Text Domain: related_posts
+Domain Path: /lang
 Description: WordPress plugin for related posts ordered by current category. It's small. It's fast. Really!
 Author: Sergej M&uuml;ller
-Version: 0.6
 Author URI: http://www.wpSEO.org
+Plugin URI: http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/
+Version: 0.7
 */
 
 
@@ -31,13 +33,13 @@ $id = $GLOBALS['post']->ID;
 if (isset($params['limit'])) {
 $limit = intval($params['limit']);
 }
-if (isset($params['type']) && !empty($params['type'])) {
+if (!empty($params['type'])) {
 $type = ($params['type'] == 'page' ? 'page' : 'post');
 }
-if (isset($params['order']) && !empty($params['order'])) {
+if (!empty($params['order'])) {
 $order = (strtoupper($params['order']) == 'DESC' ? 'DESC' : 'ASC');
 }
-if (isset($params['orderby']) && !empty($params['orderby']) && preg_match('/^[a-zA-Z_]+$/', $params['orderby'])) {
+if (!empty($params['orderby']) && preg_match('/^[a-zA-Z_]+$/', $params['orderby'])) {
 $orderby = $params['orderby'];
 }
 $posts = $GLOBALS['wpdb']->get_results(
@@ -52,20 +54,30 @@ OBJECT
 if ($posts) {
 foreach ($posts as $post) {
 $title = (function_exists('esc_attr') ? esc_attr($post->post_title) : str_replace('"', '&quot;', $post->post_title));
-$rel = (isset($params['rel']) && !empty($params['rel']) ? (' rel="' .$params['rel']. '"') : '');
+$rel = (!empty($params['rel']) ? (' rel="' .$params['rel']. '"') : '');
 $hidden = (isset($params['hidden']) && $params['hidden'] == 'title' ? '' : $title);
 $inside = (isset($params['inside']) ? $params['inside'] : '');
 $outside = (isset($params['outside']) ? $params['outside'] : '');
 $before = (isset($params['before']) ? $params['before'] : '');
 $after = (isset($params['after']) ? $params['after'] : '');
-if ((isset($params['image']) && !empty($params['image'])) && !(isset($params['hidden']) && $params['hidden'] == 'image')) {
+$image = '';
+if (!empty($params['image']) && !(isset($params['hidden']) && $params['hidden'] == 'image')) {
+$thumb = $this->get_image($post->ID, $params['image']);
+if (empty($thumb)) {
+if (!empty($params['default'])) {
+$image = sprintf(
+'<img src="%s" class="rpbc_default" alt="%2$s" title="%2$s" />',
+$params['default'],
+$title
+);
+}
+} else {
 $image = preg_replace(
 '#alt=([\'"]).*?([\'"]) title=([\'"]).*?([\'"])#si',
 'alt=$1' .$title. '$2 title=$3' .$title. '$4',
-$this->get_image($post->ID, $params['image'])
+$thumb
 );
-} else {
-$image = '';
+}
 }
 $output .= sprintf(
 '%s<a href="%s" title="%s"%s>%s%s%s%s</a>%s',
@@ -83,7 +95,7 @@ $after
 } else {
 $output = $params['message'];
 }
-if (isset($params['echo']) && !empty($params['echo'])) {
+if (!empty($params['echo'])) {
 echo $output;
 } else {
 $this->output = $output;
