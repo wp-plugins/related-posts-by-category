@@ -13,6 +13,7 @@ WordPress plugin for related posts ordered by current category. It's small. It's
 
 
 = Features =
+* Categories exclude
 * Hook support
 * Very fast execution
 * No user interface required
@@ -59,6 +60,9 @@ Please adjust the parameters accordingly.
 
 
 == Changelog ==
+= 0.8 =
+* Exclusion of desired categories
+
 = 0.7 =
 * Add support for the default thumb image
 

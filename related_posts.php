@@ -7,7 +7,7 @@ Description: WordPress plugin for related posts ordered by current category. It'
 Author: Sergej M&uuml;ller
 Author URI: http://www.wpSEO.org
 Plugin URI: http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/
-Version: 0.7
+Version: 0.8
 */
 
 
@@ -27,6 +27,7 @@ $limit = 0;
 $type = '';
 $order = '';
 $orderby = '';
+$exclude = '';
 if (!intval($id)) {
 $id = $GLOBALS['post']->ID;
 }
@@ -42,9 +43,13 @@ $order = (strtoupper($params['order']) == 'DESC' ? 'DESC' : 'ASC');
 if (!empty($params['orderby']) && preg_match('/^[a-zA-Z_]+$/', $params['orderby'])) {
 $orderby = $params['orderby'];
 }
+if (!empty($params['exclude'])) {
+$exclude = preg_split('/, /', (string)$params['exclude'], -1, PREG_SPLIT_NO_EMPTY);
+}
 $posts = $GLOBALS['wpdb']->get_results(
 sprintf(
-"SELECT DISTINCT object_id as ID, post_title FROM {$GLOBALS['wpdb']->term_relationships} r, {$GLOBALS['wpdb']->term_taxonomy} t, {$GLOBALS['wpdb']->posts} p WHERE t.term_id IN (SELECT t.term_id FROM {$GLOBALS['wpdb']->term_relationships} r, {$GLOBALS['wpdb']->term_taxonomy} t WHERE r.term_taxonomy_id = t.term_taxonomy_id AND t.taxonomy = 'category' AND r.object_id = $id) AND r.term_taxonomy_id = t.term_taxonomy_id AND p.post_status = 'publish' AND p.ID = r.object_id AND object_id <> $id %s %s %s",
+"SELECT DISTINCT object_id as ID, post_title FROM {$GLOBALS['wpdb']->term_relationships} r, {$GLOBALS['wpdb']->term_taxonomy} t, {$GLOBALS['wpdb']->posts} p WHERE t.term_id IN (SELECT t.term_id FROM {$GLOBALS['wpdb']->term_relationships} r, {$GLOBALS['wpdb']->term_taxonomy} t WHERE r.term_taxonomy_id = t.term_taxonomy_id AND t.taxonomy = 'category' AND r.object_id = $id %s) AND r.term_taxonomy_id = t.term_taxonomy_id AND p.post_status = 'publish' AND p.ID = r.object_id AND object_id <> $id %s %s %s",
+($exclude ? ('AND t.term_taxonomy_id NOT IN(' .implode(',', (array)$exclude). ')') : ''),
 ($type ? ("AND p.post_type = '" .$type. "'") : ''),
 ($orderby ? ('ORDER BY ' .(strtoupper($params['orderby']) == 'RAND' ? 'RAND()' : $orderby. ' ' .$order)) : ''),
 ($limit ? ('LIMIT ' .$limit) : '')
