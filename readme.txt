@@ -52,10 +52,10 @@ Please adjust the parameters accordingly.
 
 
 = Documentation =
-* [Plugin documentation in german](http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/ "Related Posts by Category")
-* [Plugin documentation in english](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
-* [Follow us on Twitter for updates](http://twitter.com/wpSEO "wpSEO on Twitter")
-* [Other author plugins](http://wordpress.org/extend/plugins/profile/stalkerx "Other author plugins")
+* [Documentation](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
+* [Twitter](http://twitter.com/wpSEO "wpSEO on Twitter")
+* [Blog](http://playground.ebiene.de "Playground Blog")
+* [Other plugins](http://wpcoder.de "Other plugins")
 * [Author page](http://ebiene.de "Author page")
 
 
