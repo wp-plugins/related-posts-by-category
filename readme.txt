@@ -1,7 +1,7 @@
 === Related Posts by Category ===
 Contributors: stalkerX
 Tags: similar posts, related posts, similar, related, posts, category
-Requires at least: 2.3
+Requires at least: 2.8
 Tested up to: 3.1
 Stable tag: trunk
 
@@ -60,6 +60,9 @@ Please adjust the parameters accordingly.
 
 
 == Changelog ==
+= 0.9 =
+* Checks and cleans of user parameters
+
 = 0.8 =
 * Exclusion of desired categories
 

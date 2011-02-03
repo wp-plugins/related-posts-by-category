@@ -7,7 +7,7 @@ Description: WordPress plugin for related posts ordered by current category. It'
 Author: Sergej M&uuml;ller
 Author URI: http://www.wpSEO.org
 Plugin URI: http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/
-Version: 0.8
+Version: 0.9
 */
 
 
@@ -58,8 +58,8 @@ OBJECT
 );
 if ($posts) {
 foreach ($posts as $post) {
-$title = (function_exists('esc_attr') ? esc_attr($post->post_title) : str_replace('"', '&quot;', $post->post_title));
-$rel = (!empty($params['rel']) ? (' rel="' .$params['rel']. '"') : '');
+$title = esc_attr($post->post_title);
+$rel = (!empty($params['rel']) ? (' rel="' .esc_attr($params['rel']). '"') : '');
 $hidden = (isset($params['hidden']) && $params['hidden'] == 'title' ? '' : $title);
 $inside = (isset($params['inside']) ? $params['inside'] : '');
 $outside = (isset($params['outside']) ? $params['outside'] : '');
@@ -72,7 +72,7 @@ if (empty($thumb)) {
 if (!empty($params['default'])) {
 $image = sprintf(
 '<img src="%s" class="rpbc_default" alt="%2$s" title="%2$s" />',
-$params['default'],
+esc_url($params['default']),
 $title
 );
 }
@@ -87,7 +87,7 @@ $thumb
 $output .= sprintf(
 '%s<a href="%s" title="%s"%s>%s%s%s%s</a>%s',
 $before,
-get_permalink($post->ID),
+esc_url(get_permalink($post->ID)),
 $title,
 $rel,
 $image,
