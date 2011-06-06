@@ -2,7 +2,7 @@
 Contributors: stalkerX
 Tags: similar posts, related posts, similar, related, posts, category
 Requires at least: 2.8
-Tested up to: 3.1
+Tested up to: 3.2
 Stable tag: trunk
 
 WordPress plugin for related posts ordered by current category. It's small. It's fast. Really!
@@ -53,6 +53,7 @@ Please adjust the parameters accordingly.
 
 = Documentation =
 * [Documentation](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
+* [Flattr](https://flattr.com/thing/61880/Related-Posts-by-Category-Plugin-fur-verwandte-Beitrage-einer-Kategorie "Flattr")
 * [Twitter](http://twitter.com/wpSEO "wpSEO on Twitter")
 * [Blog](http://playground.ebiene.de "Playground Blog")
 * [Other plugins](http://wpcoder.de "Other plugins")
@@ -60,6 +61,9 @@ Please adjust the parameters accordingly.
 
 
 == Changelog ==
+= 0.9.1 =
+* Bugfix for article titles with a number
+
 = 0.9 =
 * Checks and cleans of user parameters
 

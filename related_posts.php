@@ -7,7 +7,7 @@ Description: WordPress plugin for related posts ordered by current category. It'
 Author: Sergej M&uuml;ller
 Author URI: http://www.wpSEO.org
 Plugin URI: http://playground.ebiene.de/400/related-posts-by-category-the-wordpress-plugin-for-similar-posts/
-Version: 0.9
+Version: 0.9.1
 */
 
 
@@ -79,7 +79,7 @@ $title
 } else {
 $image = preg_replace(
 '#alt=([\'"]).*?([\'"]) title=([\'"]).*?([\'"])#si',
-'alt=$1' .$title. '$2 title=$3' .$title. '$4',
+'alt=${1}' .$title. '${2} title=${3}' .$title. '${4}',
 $thumb
 );
 }
