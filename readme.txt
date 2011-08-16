@@ -1,8 +1,8 @@
 === Related Posts by Category ===
-Contributors: stalkerX
+Contributors: sergej.mueller
 Tags: similar posts, related posts, similar, related, posts, category
 Requires at least: 2.8
-Tested up to: 3.2.1
+Tested up to: 3.3
 Stable tag: trunk
 
 WordPress plugin for related posts ordered by current category. It's small. It's fast. Really!
