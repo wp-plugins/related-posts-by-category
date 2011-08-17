@@ -51,13 +51,13 @@ Just put `<?php do_action('related_posts_by_category', args) ?>` in your *single
 Please adjust the parameters accordingly.
 
 
-= Documentation =
-* [Documentation](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
-* [Flattr](https://flattr.com/thing/61880/Related-Posts-by-Category-Plugin-fur-verwandte-Beitrage-einer-Kategorie "Flattr")
-* [Twitter](http://twitter.com/wpSEO "wpSEO on Twitter")
+= Related Links =
 * [Blog](http://playground.ebiene.de "Playground Blog")
+* [Flattr](http://flattr.com/profile/sergej.mueller "Flattr")
+* [Google+](https://plus.google.com/110569673423509816572 "Google+")
+* [Portfolio](http://ebiene.de "Portfolio")
 * [Other plugins](http://wpcoder.de "Other plugins")
-* [Author page](http://ebiene.de "Author page")
+* [Documentation](http://playground.ebiene.de/356/related-posts-by-category-wp-plugin-fur-verwandte-beitrage-einer-kategorie/ "Related Posts by Category")
 
 
 == Changelog ==
