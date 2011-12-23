@@ -1,5 +1,5 @@
 === Related Posts by Category ===
-Contributors: sergej.mueller
+Contributors: stalkerX
 Tags: similar posts, related posts, similar, related, posts, category
 Requires at least: 2.8
 Tested up to: 3.3
